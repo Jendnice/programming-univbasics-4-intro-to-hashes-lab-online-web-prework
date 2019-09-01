@@ -1,4 +1,4 @@
-def update_counting_hash("hash", "key")
+def update_counting_hash(hash, key)
   if hash[key]
     hash[key] += 1
   else
@@ -7,5 +7,5 @@ def update_counting_hash("hash", "key")
 end
 
 update_hash = {:name => 1, :date => 2}
-update_counting_hash("update_hash", ":name")
+update_counting_hash(update_hash, ":name")
 puts update_counting_hash
